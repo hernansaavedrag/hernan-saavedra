@@ -271,12 +271,18 @@ h1{ margin: 0 0 10px; font-size: 44px; letter-spacing: -0.02em; }
 }
 
 .profile-photo{
-  width: 96px;
-  height: 96px;
-  border-radius: 999px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
   object-fit: cover;
+
+  image-rendering: auto;
+  transform: translateZ(0);
+
   border: 1px solid var(--line);
   display: block;
   margin: 0 0 12px;
 }
+
+
 
