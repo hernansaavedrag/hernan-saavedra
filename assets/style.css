@@ -271,18 +271,22 @@ h1{ margin: 0 0 10px; font-size: 44px; letter-spacing: -0.02em; }
 }
 
 .profile-photo{
-  width: 112px;
-  height: 112px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: center;
 
+  /* Quitar cualquier “truco” que cause blur */
+  transform: none;
   image-rendering: auto;
-  transform: translateZ(0);
+  backface-visibility: visible;
 
   border: 1px solid var(--line);
   display: block;
-  margin: 0 0 12px;
+  margin: 0 auto 12px;
 }
+
 
 
 
